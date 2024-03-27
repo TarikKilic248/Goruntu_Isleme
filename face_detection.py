@@ -11,6 +11,8 @@ import mediapipe as mp
 cap = cv2.VideoCapture(0)
 
 mpFaceDetection = mp.solutions.face_detection
+# FaceDetection() parametrenin ici 0 ra yaklasirsa kalite bozulur
+# 0 ile 1 arasinda deger alir
 faceDetection = mpFaceDetection.FaceDetection()
 
 mpDraw = mp.solutions.drawing_utils
